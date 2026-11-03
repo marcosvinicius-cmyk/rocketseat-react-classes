@@ -1,0 +1,185 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 780px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.headerTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gray-100);
+  line-height: 1.2;
+}
+
+.headerSubtitle {
+  font-size: 14px;
+  color: var(--gray-300);
+}
+
+/* Header Date Selector */
+.headerDateSelector {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--gray-700);
+  border: 1px solid var(--gray-500);
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.headerDateSelector:hover,
+.headerDateSelector:focus-within {
+  border-color: var(--yellow);
+}
+
+.dateSelectorIcon {
+  color: var(--yellow);
+}
+
+.dateSelectorValue {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-100);
+  user-select: none;
+}
+
+.dateSelectorCaret {
+  color: var(--gray-300);
+}
+
+.headerHiddenDateInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Periods List */
+.periodsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Period Card */
+.periodCard {
+  background-color: var(--gray-700);
+  border: 1px solid var(--gray-600);
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.periodHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-600);
+}
+
+.periodTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.periodHeaderIcon {
+  color: var(--yellow);
+}
+
+.periodTitleText {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-200);
+}
+
+.periodRange {
+  font-size: 14px;
+  color: var(--gray-400);
+  font-weight: 500;
+}
+
+/* Period Content */
+.periodContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.scheduleItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  transition: background-color 0.15s ease;
+}
+
+.scheduleTime {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-100);
+  width: 70px;
+  flex-shrink: 0;
+}
+
+.scheduleClient {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--gray-300);
+  flex: 1;
+}
+
+.removeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.trashIcon {
+  color: var(--yellow);
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.removeButton:hover .trashIcon {
+  color: var(--yellow-light);
+  transform: scale(1.1);
+}
+
+.emptyMessage {
+  font-size: 14px;
+  color: var(--gray-400);
+  padding: 8px 0;
+  font-style: italic;
+}

@@ -1,0 +1,39 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 24px;
+}
+
+.layoutWrapper {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.topLogoArea {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+@media (max-width: 960px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+  }
+
+  .pageContainer {
+    padding: 24px 16px;
+  }
+}
